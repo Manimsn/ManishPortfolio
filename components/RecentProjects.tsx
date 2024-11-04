@@ -3,7 +3,7 @@
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
-// import { PinContainer } from "./ui/Pin";
+import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
   return (
@@ -18,7 +18,7 @@ const RecentProjects = () => {
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
-            {/* <PinContainer
+            <PinContainer
               title="/ui.aceternity.com"
               href="https://twitter.com/mannupaaji"
             >
@@ -72,7 +72,7 @@ const RecentProjects = () => {
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>
-            </PinContainer> */}
+            </PinContainer>
           </div>
         ))}
       </div>
