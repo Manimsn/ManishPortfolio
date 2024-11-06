@@ -19,7 +19,7 @@ const Clients = () => {
           //   justify-center
           className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased items-center  relative overflow-hidden"
         > */} 
-        
+        {/* //comments */}
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
