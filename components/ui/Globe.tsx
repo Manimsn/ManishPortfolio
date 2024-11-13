@@ -45,7 +45,7 @@ export type GlobeConfig = {
   arcTime?: number;
   arcLength?: number;
   rings?: number;
-  maxRings?: string;
+  maxRings?: number;
   initialPosition?: {
     lat: number;
     lng: number;
