@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { SVGProps, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
@@ -167,8 +167,10 @@ const AceternityIcon = ({ order }: { order: string }) => {
     </div>
   );
 };
-
-export const Icon = ({ className, ...rest }: any) => {
+interface IconProps extends SVGProps<SVGSVGElement> {
+  className?: string;
+}
+export const Icon = ({ className, ...rest }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
