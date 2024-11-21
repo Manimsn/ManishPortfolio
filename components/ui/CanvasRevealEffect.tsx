@@ -252,12 +252,12 @@ const ShaderMaterial = ({
           preparedUniforms[uniformName] = { value: uniform.value, type: "1fv" };
           break;
         case "uniform3fv":
-          // preparedUniforms[uniformName] = {
-          //   value: uniform.value.map((v: number[]) =>
-          //     new THREE.Vector3().fromArray(v)
-          //   ),
-          //   type: "3fv",
-          // };
+          preparedUniforms[uniformName] = {
+            value: uniform.value.map((v: number[]) =>
+              new THREE.Vector3().fromArray(v)
+            ),
+            type: "3fv",
+          };
           if (
             Array.isArray(uniform.value) &&
             uniform.value.every((v) => Array.isArray(v))
