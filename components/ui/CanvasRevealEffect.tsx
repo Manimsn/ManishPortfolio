@@ -273,10 +273,10 @@ const ShaderMaterial = ({
           break;
 
         case "uniform2f":
-          preparedUniforms[uniformName] = {
-            value: new THREE.Vector2().fromArray(uniform.value),
-            type: "2f",
-          };
+          // preparedUniforms[uniformName] = {
+          //   value: new THREE.Vector2().fromArray(uniform.value),
+          //   type: "2f",
+          // };
           if (Array.isArray(uniform.value) && uniform.value.length === 3) {
             preparedUniforms[uniformName] = {
               value: new THREE.Vector2().fromArray(uniform.value as number[]),
