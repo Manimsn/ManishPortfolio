@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Manish Next JS Portfolio
+            Manikandan Ekambaram's Portfolio
           </h2>
 
           <TextGenerateEffect
@@ -34,7 +34,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Manikandan, A Front-End Developer based in India
+            Hi, I&apos;m Manikandan, A Full Stack Web/Mobile Application Developer based in India
           </p>
 
           <a href="#about">
